@@ -1,0 +1,24 @@
+﻿@page
+@model Examen.Pages.EditareStudentModel
+@{
+    ViewData["Title"] = "Editare Student";
+}
+<form method="post">
+    <label>Nume</label>
+    <input asp-for="@Model.Student.Nume" value="@Model.Student.Nume" /><br />
+
+    <label>Prenume</label>
+    <input asp-for="@Model.Student.Prenume" value="@Model.Student.Prenume" /><br />
+
+    <label>Email</label>
+    <input asp-for="@Model.Student.Email" value="@Model.Student.Email" /><br />
+
+    <label>Data Nasterii</label>
+    <input asp-for="@Model.Student.Data" value="@Model.Student.Data" /><br />
+
+    <label>Grupa</label>
+    <select asp-for="@Model.Student.GrupaId" asp-items="@Model.grupa"></select>
+
+    <input type="submit" value="submit" />
+
+</form>

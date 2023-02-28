@@ -1,0 +1,9 @@
+﻿@page
+@model Examen.Pages.StergeStudentModel
+@{
+    ViewData["Title"] = "Sterge Student";
+}
+<p>Confirmati Stergerea Studentului @Model.Studentrem.Nume @Model.Studentrem.Prenume?</p>
+<form method="post">
+    <input type="submit" name="buttonDelete" value="submit" />
+</form>

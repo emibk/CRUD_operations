@@ -1,0 +1,19 @@
+﻿@page
+@model Examen.Pages.AdaugaStudentModel
+@{
+    ViewData["Title"] = "Adauga Student";
+}
+<form method="post">
+    <label>Nume</label><br />
+    <input asp-for="@Model.Student.Nume" /><br 
+
+    <label>Prenume</label><br />
+    <input asp-for="@Model.Student.Prenume" /><br />
+    <label>Email</label><br />
+    <input asp-for="@Model.Student.Email" /><br />
+    <label>Data Nasterii</label>
+    <input asp-for="@Model.Student.Data" /><br />
+    <label>Grupa</label>
+    <select asp-for="@Model.Student.GrupaId" asp-items="@Model.grupa"></select>
+    <input type="submit" value="Salveaza Student" />
+</form>
